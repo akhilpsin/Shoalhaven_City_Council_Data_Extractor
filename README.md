@@ -35,6 +35,7 @@ Shoalhaven_City_Council_Data_Extractor/
 ├─ url_collector.py         # Collects all DA URLs from the portal
 ├─ page_scraper_parallel.py # Scrapes DA details in parallel and writes to CSV
 ├─ shoalhaven_urls.txt      # Stores collected DA URLs (generated)
+├─ requirements.txt         # contains all external packages and libraries
 └─ shoalhaven_data.csv      # Scraped DA data (generated)
 
 ````
@@ -50,7 +51,7 @@ Shoalhaven_City_Council_Data_Extractor/
    cd Shoalhaven_City_Council_Data_Extractor
    ```
 
-2. Make sure to install all the librarie in **requirements.txt**
+2. Make sure to install all the external packages and libraries in **requirements.txt**
 
 3. Run the scraper:
 
