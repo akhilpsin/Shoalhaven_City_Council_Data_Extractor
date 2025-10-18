@@ -28,16 +28,16 @@ A **web scraper** that extracts all **Development Application (DA)** details fro
 ## Project Structure
 
 ```
-
 Shoalhaven_City_Council_Data_Extractor/
 │
-├─ main.py                  # Entry point to collect URLs and scrape DA details
-├─ url_collector.py         # Collects all DA URLs from the portal
-├─ page_scraper_parallel.py # Scrapes DA details in parallel and writes to CSV
-├─ shoalhaven_urls.txt      # Stores collected DA URLs (generated)
-├─ requirements.txt         # contains all external packages and libraries
-└─ shoalhaven_data.csv      # Scraped DA data (generated)
-
+├─ main.py                       # Entry point to collect URLs and scrape DA details
+├─ requirements.txt               # Lists all external packages and libraries
+├─ data_scraper_helper/           # Helper scripts for scraping
+│   ├─ url_collector.py           # Collects all DA URLs from the portal
+│   └─ page_scraper_parallel.py   # Scrapes DA details in parallel and writes to CSV
+└─ output_files/                  # Folder to store generated data
+    ├─ shoalhaven_urls.txt        # Collected DA URLs
+    └─ shoalhaven_data.csv        # Scraped DA details
 ````
 
 ---
@@ -47,7 +47,7 @@ Shoalhaven_City_Council_Data_Extractor/
 1. Clone the repository:
 
    ```bash
-   git clone "https://github.com/akhilpsin/Shoalhaven_City_Council_Data_Extractor"
+   git clone "https://github.com/akhilpsin/Shoalhaven_City_Council_Data_Extractor.git"
    cd Shoalhaven_City_Council_Data_Extractor
    ```
 
